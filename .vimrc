@@ -9,6 +9,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'https://github.com/ervandew/supertab.git'
+Plugin 'https://github.com/tpope/vim-surround.git'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
