@@ -27,12 +27,47 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+" Color scheme
 syntax on
 color distinguished
 
-set tabstop=4 shiftwidth=4 autoindent smarttab softtabstop=4
-set hlsearch
+" For indentation
+set tabstop=4 
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+set smarttab
+set expandtab
 
+" Highlighting
+set hlsearch
+set cursorline
+
+set nocompatible
+set mouse=a
+
+" Always switch to the current file
+set autochdir
+
+" Allow for cursor beyond last character 
+set virtualedit=onemore
+
+" Store a ton of history, the default is 20
+set history=1000
+
+" Display the current mode
+set showmode
+
+" Line numbers on
+set nu
+
+" Same indentation on paste
+set pastetoggle=<F12>
+
+filetype plugin indent on
+
+
+" Shortcut
 nmap <CR> o<Esc>
 
 
