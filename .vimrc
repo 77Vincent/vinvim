@@ -76,6 +76,6 @@ nmap <Return> o
 nmap <BS> i<BS>
 
 " Visual Mode Shortcuts
-vmap <BS> "_dd
+vmap <BS> "_ddi
 
 
