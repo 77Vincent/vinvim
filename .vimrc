@@ -69,17 +69,16 @@ set autowrite
 
 filetype plugin indent on
 
-
 " ********** Normal Mode Shortcuts **********
-"
+
 " Normal Mode
-nmap <Return> i<Return>
-nmap <BS> i<BS>
-nmap <Space> i<Space>
-nmap <tab> i<tab>
+nnoremap <Enter> i<Enter>
+nnoremap <bs> i<bs>
+nnoremap <Space> i
+nnoremap <tab> i<tab>
+nnoremap <2-LeftMouse> i
 
 " Insert Mode
-
 
 " Visual Mode
 vmap <BS> "_dd
