@@ -2,3 +2,6 @@
 cp .vimrc ~/
 cp -rf .vim ~/
 cp .bash_profile ~/
+
+# Reload .bash_profile
+source ~/.bash_profile

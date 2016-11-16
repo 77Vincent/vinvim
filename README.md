@@ -9,3 +9,9 @@
 ~/.vim/colors/distinguished.vim
 ~/.vim/bundle
 ~/.vimrc
+
+## Installation
+
+Open terminal:
+
+./install
