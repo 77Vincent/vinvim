@@ -31,7 +31,7 @@ filetype plugin indent on    " required
 syntax on
 color distinguished
 
-" For indentation
+" ********** For indentation **********
 set tabstop=4 
 set shiftwidth=4
 set softtabstop=4
@@ -39,7 +39,7 @@ set autoindent
 set smarttab
 set expandtab
 
-" Highlighting
+" ********** For Highlighting **********
 set hlsearch
 set cursorline
 
@@ -71,11 +71,13 @@ set autowrite
 filetype plugin indent on
 
 
-" Normal Mode Shortcuts
-nmap <Return> o
+" ********** Normal Mode Shortcuts **********
+nmap <Return> i<Return>
 nmap <BS> i<BS>
+nmap <Space> i<Space>
+nmap <tab> i<tab>
 
 " Visual Mode Shortcuts
-vmap <BS> "_ddi
+vmap <BS> "_dd
 
 
