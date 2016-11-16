@@ -64,10 +64,16 @@ set nu
 " Same indentation on paste
 set pastetoggle=<F12>
 
+" Auto write
+au FocusLost * :wa
+set autowrite
+
 filetype plugin indent on
 
 
 " Shortcut
-nmap <CR> o<Esc>
+nmap <Return> o
+nmap <BS> "_dd
+
 
 
