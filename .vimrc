@@ -10,7 +10,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'https://github.com/ervandew/supertab.git'
-Plugin 'https://github.com/tpope/vim-surround.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -72,12 +71,16 @@ filetype plugin indent on
 
 
 " ********** Normal Mode Shortcuts **********
+"
+" Normal Mode
 nmap <Return> i<Return>
 nmap <BS> i<BS>
 nmap <Space> i<Space>
 nmap <tab> i<tab>
 
-" Visual Mode Shortcuts
-vmap <BS> "_dd
+" Insert Mode
 
+
+" Visual Mode
+vmap <BS> "_dd
 
