@@ -26,24 +26,13 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+
+" ********** Global **********
 " Color scheme
 syntax on
 color distinguished
 
-" ********** For indentation **********
-set tabstop=4 
-set shiftwidth=4
-set softtabstop=4
-set autoindent
-set smarttab
-set expandtab
-
-" ********** For Highlighting **********
-set hlsearch
-set cursorline
-
 set nocompatible
-set mouse=a
 
 " Always switch to the current file
 set autochdir
@@ -63,20 +52,37 @@ set nu
 " Same indentation on paste
 set pastetoggle=<F12>
 
+set scrolloff=3
+set completeopt=preview,menu
+set clipboard+=unnamed
+set ruler
 " Auto write
 au FocusLost * :wa
 set autowrite
-
 filetype plugin indent on
+set whichwrap+=<,>,h,l
+
+" ********** For indentation **********
+set tabstop=4 
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+set smarttab
+
+" ********** For Highlighting **********
+set hlsearch
+set cursorline
+set incsearch
 
 " ********** Normal Mode Shortcuts **********
 
 " Normal Mode
 nnoremap <Enter> i<Enter>
 nnoremap <bs> i<bs>
-nnoremap <Space> i
+nnoremap <space> i
 nnoremap <tab> i<tab>
-nnoremap <2-LeftMouse> i
+nnoremap <S-Up> <Up><Up>
+nnoremap <S-down> <down><down>
 
 " Insert Mode
 
