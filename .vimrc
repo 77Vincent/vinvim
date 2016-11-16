@@ -71,9 +71,11 @@ set autowrite
 filetype plugin indent on
 
 
-" Shortcut
+" Normal Mode Shortcuts
 nmap <Return> o
-nmap <BS> "_dd
+nmap <BS> i<BS>
 
+" Visual Mode Shortcuts
+vmap <BS> "_dd
 
 
