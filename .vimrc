@@ -82,10 +82,6 @@ nnoremap <Enter> i<Enter>
 nnoremap <bs> i<bs>
 nnoremap <space> i
 nnoremap <tab> i<tab>
-nnoremap <Up> <Up>i
-nnoremap <Down> <Down>i
-nnoremap <Left> <Left>i
-nnoremap <Right> <Right>i
 " Cursor traveling
 nnoremap [ j
 nnoremap <S-k> 7k
