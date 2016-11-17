@@ -5,5 +5,5 @@ alias ..="cd ../"
 
 # Git
 alias gst="git status"
-alias gaa="git add ."
-alias gcm="git commit -m"
+alias gad="git add ."
+alias gco="git commit -m"
