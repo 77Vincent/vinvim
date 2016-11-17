@@ -56,11 +56,11 @@ set scrolloff=3
 set completeopt=preview,menu
 set clipboard+=unnamed
 set ruler
+
 " Auto write
 au FocusLost * :wa
 set autowrite
 filetype plugin indent on
-set whichwrap+=<,>,h,l
 
 " ********** For indentation **********
 set tabstop=4 
@@ -71,21 +71,40 @@ set smarttab
 
 " ********** For Highlighting **********
 set hlsearch
-set cursorline
 set incsearch
+set cursorcolumn
+set cursorline
 
 " ********** Normal Mode Shortcuts **********
 
-" Normal Mode
+" Go into Insert mode
 nnoremap <Enter> i<Enter>
 nnoremap <bs> i<bs>
 nnoremap <space> i
 nnoremap <tab> i<tab>
-nnoremap <S-Up> <Up><Up>
-nnoremap <S-down> <down><down>
-
-" Insert Mode
-
+nnoremap <Up> <Up>i
+nnoremap <Down> <Down>i
+nnoremap <Left> <Left>i
+nnoremap <Right> <Right>i
+" Cursor traveling
+nnoremap [ j
+nnoremap <S-k> 7k
+nnoremap <S-j> 7j
+nnoremap <C-l> $
+nnoremap <C-h> 0
+nnoremap <S-l> w
+nnoremap <S-h> b 
+" Save
+inoremap <F1> <Esc>:w<Enter>
+nnoremap <F1> :w<Enter>
+inoremap <F2> <Esc>:q<Enter>
+nnoremap <F2> :q<Enter>
+" Undo Redo
+nnoremap <C-z> u
+nnoremap <C-y> <C-r>
+inoremap <C-z> <Esc>ui
+inoremap <C-y> <Esc><C-r>i
+" Text Selection
+inoremap <C-D> <Esc>d0i
 " Visual Mode
 vmap <BS> "_dd
-
