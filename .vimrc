@@ -28,6 +28,11 @@ filetype plugin indent on    " required
 
 
 " ********** Global **********
+set ruler
+set encoding=utf-8
+set fileencoding=utf-8
+set scrolloff=7
+
 " Color scheme
 syntax on
 color distinguished
@@ -46,40 +51,31 @@ set showmode
 " Line numbers on
 set nu
 
-" Same indentation on paste
-set pastetoggle=<F12>
-
-set scrolloff=3
-set completeopt=preview,menu
-set clipboard+=unnamed
-set ruler
-
 " Auto write
 au FocusLost * :wa
 set autowrite
 filetype plugin indent on
 
-" ********** For indentation **********
+" ********** Indentation **********
 set tabstop=4 
 set shiftwidth=4
 set softtabstop=4
 set autoindent
 set smarttab
 
-" ********** For Highlighting **********
+" ********** Highlighting **********
 set hlsearch
 set incsearch
 set cursorcolumn
 set cursorline
 
-" ********** Normal Mode Shortcuts **********
-" Cursor traveling
-nnoremap <S-k> 7k
-nnoremap <S-j> 7j
+" ********** Mapping **********
+
 " Save
 inoremap <F1> <Esc>:w<Enter>
 nnoremap <F1> :w<Enter>
 inoremap <F2> <Esc>:q<Enter>
 nnoremap <F2> :q<Enter>
+
 " Text Selection
 nnoremap <S-x> d$
