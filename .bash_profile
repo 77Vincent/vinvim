@@ -8,4 +8,6 @@ alias gst="git status"
 alias gad="git add ."
 alias gco="git commit -m"
 
-export CLICOLOR=2
+# Bash color
+export CLICOLOR=1
+export LSCOLORS=gxcxdxexdxbxcxdxexfxbx
