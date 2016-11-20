@@ -2,6 +2,8 @@
 alias ll="ls -lA"
 alias ~~="cd ~/"
 alias ..="cd ../"
+alias grep="grep --color=always"
+alias vi="vim"
 
 # Git
 alias gst="git status"
@@ -10,4 +12,6 @@ alias gco="git commit -m"
 
 # Bash color
 export CLICOLOR=1
-export LSCOLORS=gxcxdxexdxbxcxdxexfxbx
+export LSCOLORS=cxcxdxexgxbxcxdxexfxbx
+
+export PS1="\e[0;31m[\u@\h \W]\$ \e[m"

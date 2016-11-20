@@ -29,18 +29,18 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " ********** Global **********
+
+" Case insensitive
 set ignorecase
-set paste
+
 set ruler
 set encoding=utf-8
 set fileencoding=utf-8
 set scrolloff=7
 set number
-set showmatch
 
 " Color scheme
 syntax on
-syntax enable
 color distinguished
 
 " Always switch to the current file
@@ -49,9 +49,9 @@ set autochdir
 " Store a ton of history, the default is 20
 set history=1000
 
-" Display the current mode
 set showmode
 set showcmd
+set showmatch
 
 " Line numbers on
 set nu
