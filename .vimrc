@@ -41,7 +41,8 @@ set number
 
 " Color scheme
 syntax on
-color distinguished
+set background=dark
+color gruvbox 
 
 " Always switch to the current file
 set autochdir

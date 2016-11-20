@@ -14,4 +14,4 @@ alias gco="git commit -m"
 export CLICOLOR=1
 export LSCOLORS=cxcxdxexgxbxcxdxexfxbx
 
-export PS1="\e[0;31m[\u@\h \W]\$ \e[m"
+export PS1="\e[0;36m[\u@\h \W]\$ \e[m"
