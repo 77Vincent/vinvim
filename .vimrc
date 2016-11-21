@@ -29,28 +29,9 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" ********** Global **********
-
-" Case insensitive
-set ignorecase
-
-set ruler
-set encoding=utf-8
-set fileencoding=utf-8
-set scrolloff=7
-set number
-
-" Color scheme
-syntax on
-set background=dark
-color gruvbox 
-
-" Always switch to the current file
+" *************** Global ***************
 set autochdir
-
-" Store a ton of history, the default is 20
 set history=1000
-
 set showmode
 set showcmd
 set showmatch
@@ -61,21 +42,35 @@ set nu
 " Auto write
 set autowrite
 
-" ********** Indentation **********
+" Case insensitive
+set ignorecase
+
+set ruler
+set encoding=utf-8
+set fileencoding=utf-8
+set scrolloff=7
+set number
+
+" *************** Color scheme ***************
+syntax on
+set background=dark
+color jellybeans 
+
+" *************** Indentation ***************
 set tabstop=4 
 set shiftwidth=4
 set softtabstop=4
 set autoindent
 set smarttab
+set et
 
-" ********** Highlighting **********
+" *************** Highlighting ***************
 set hlsearch
 set incsearch
 set cursorcolumn
 set cursorline
 
-" ********** Mapping **********
-
+" *************** Mapping ***************
 nnoremap <S-x> d$
 inoremap ( ()<Esc>i
 inoremap [ []<Esc>i
