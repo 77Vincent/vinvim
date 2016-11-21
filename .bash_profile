@@ -6,6 +6,7 @@ alias grep="grep --color=always"
 alias vi="vim"
 
 # Git
+alias gp="git pull"
 alias gst="git status"
 alias gad="git add ."
 alias gco="git commit -m"
