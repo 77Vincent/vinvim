@@ -42,7 +42,7 @@ set ignorecase
 set ruler
 set encoding=utf-8
 set fileencoding=utf-8
-set scrolloff=7
+set scrolloff=9
 set number
 
 " *************** Color scheme ***************
