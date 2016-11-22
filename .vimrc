@@ -11,6 +11,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'https://github.com/ervandew/supertab.git'
+Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 
 " All of your Plugins must be added before the following line
@@ -44,9 +45,10 @@ set scrolloff=7
 set number
 
 " *************** Color scheme ***************
+set t_Co=256
 syntax on
 set background=dark
-color jellybeans 
+color distinguished 
 
 " *************** Indentation ***************
 set tabstop=4 
@@ -54,7 +56,7 @@ set shiftwidth=4
 set softtabstop=4
 set autoindent
 set smarttab
-set et
+set expandtab
 
 " *************** Highlighting ***************
 set hlsearch
@@ -64,3 +66,13 @@ set cursorline
 
 " *************** Mapping ***************
 nnoremap <S-x> d$
+
+" *************** Plugins ***************
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
