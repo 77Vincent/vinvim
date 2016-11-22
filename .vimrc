@@ -35,16 +35,8 @@ set history=1000
 set showmode
 set showcmd
 set showmatch
-
-" Line numbers on
-set nu
-
-" Auto write
 set autowrite
-
-" Case insensitive
 set ignorecase
-
 set ruler
 set encoding=utf-8
 set fileencoding=utf-8
@@ -72,8 +64,3 @@ set cursorline
 
 " *************** Mapping ***************
 nnoremap <S-x> d$
-inoremap ( ()<Esc>i
-inoremap [ []<Esc>i
-inoremap { {}<Esc>i
-inoremap " ""<Esc>i
-inoremap ' ''<Esc>i
