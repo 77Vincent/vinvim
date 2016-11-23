@@ -80,9 +80,6 @@ set incsearch
 set cursorcolumn
 set cursorline
 
-" *************** Mapping ***************
-nnoremap <S-x> d$
-
 " *************** Plugins ***************
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
