@@ -17,10 +17,10 @@ Plugin 'https://github.com/mustache/vim-mustache-handlebars.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
+" filetype plugin indent on    " required
 
 " To ignore plugin indent changes, instead use:
-"filetype plugin on
+filetype plugin on
 
 " Brief help
 " :PluginList       - lists configured plugins
@@ -31,21 +31,36 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" *************** Global ***************
-set autochdir
+" *************** Basic ***************
 set history=1000
+set number
+set scrolloff=9
+set ruler
+set ignorecase
+set encoding=utf-8
+set fileencoding=utf-8
+
+" *************** Find files ***************
+" Search down into subfolders
+" Provides tab-completion for all file-related tasks
+set path+=**
+
+" Display all matching files when we tab complete
+set wildmenu
+
+" :find filename will search recursively through all directories and auto open that file 
+" :ls will show all open buffers
+" :b lets you autocomplete any open buffer and jump to that buffer
+
+" *************** Auto write ***************
+set autowrite
+
+set autochdir
 set showmode
 set showcmd
 set showmatch
-set autowrite
-set ignorecase
-set ruler
-set encoding=utf-8
-set fileencoding=utf-8
-set scrolloff=9
-set number
 
-" *************** Color scheme ***************
+" *************** Scheme ***************
 set t_Co=256
 syntax on
 set background=dark
