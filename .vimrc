@@ -14,7 +14,7 @@ Plugin 'https://github.com/ervandew/supertab.git'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'https://github.com/mustache/vim-mustache-handlebars.git'
-Plugin 'https://github.com/vim-syntastic/syntastic.git'
+Plugin 'https://github.com/Townk/vim-autoclose.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
