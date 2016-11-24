@@ -14,6 +14,7 @@ Plugin 'https://github.com/ervandew/supertab.git'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'https://github.com/mustache/vim-mustache-handlebars.git'
+Plugin 'https://github.com/vim-syntastic/syntastic.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -52,7 +53,7 @@ set wildmenu
 " :ls will show all open buffers
 " :b lets you autocomplete any open buffer and jump to that buffer
 
-" *************** Auto write ***************
+" *************** Automate ***************
 set autowrite
 
 set autochdir
@@ -80,12 +81,3 @@ set incsearch
 set cursorcolumn
 set cursorline
 
-" *************** Plugins ***************
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
