@@ -35,7 +35,7 @@ filetype plugin on
 " *************** Basic ***************
 set history=1000
 set number
-set scrolloff=9
+set scrolloff=12
 set ruler
 set ignorecase
 set encoding=utf-8
