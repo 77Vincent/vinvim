@@ -1,7 +1,7 @@
 # Files traveling
 alias ll="ls -lA"
 alias ~~="cd ~/"
-alias ..="cd ../"
+alias ..="cd ../; ll"
 alias grep="grep --color=always"
 alias vi="vim"
 
