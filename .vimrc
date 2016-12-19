@@ -40,7 +40,7 @@ set scrolloff=12
 set ruler
 set ignorecase
 set encoding=utf-8
-set fileencoding=utf-8
+set fileencodings=utf-bom,utf-8,utf-16,gbk,big5,gb18030,latin1
 
 " *************** Find files ***************
 " Search down into subfolders
@@ -75,6 +75,7 @@ set softtabstop=4
 set autoindent
 set smarttab
 set expandtab
+set paste
 
 " *************** Highlighting ***************
 set hlsearch
