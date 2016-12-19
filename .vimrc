@@ -75,7 +75,6 @@ set softtabstop=4
 set autoindent
 set smarttab
 set expandtab
-set paste
 
 " *************** Highlighting ***************
 set hlsearch
