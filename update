@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 git status
 git add .
-git commit -m "configurations auto updates"
+git commit -m "Auto updates"
 git pull
 git push
