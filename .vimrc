@@ -14,6 +14,7 @@ Plugin 'https://github.com/Townk/vim-autoclose.git'
 
 " Syntax Highlight 
 Plugin 'posva/vim-vue'
+Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'JulesWang/css.vim'
 Plugin 'cakebaker/scss-syntax.vim'
