@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 cp .vimrc ~/
-cp distinguished.vim ~/.vim/colors
+cp ./colors/* ~/.vim/colors
 cp .bash_profile ~/
 
 # Reload .bash_profile

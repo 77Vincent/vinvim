@@ -38,13 +38,8 @@ set path+=**
 " Display all matching files when we tab complete
 set wildmenu
 
-" :find filename will search recursively through all directories and auto open that file 
-" :ls will show all open buffers
-" :b lets you autocomplete any open buffer and jump to that buffer
-
 " *************** Automate ***************
 set autowrite
-
 set autochdir
 set showmode
 set showcmd
@@ -54,7 +49,7 @@ set showmatch
 set t_Co=256
 syntax on
 set background=dark
-color distinguished 
+color jellybeans 
 
 " *************** Indentation ***************
 filetype plugin on
