@@ -14,10 +14,7 @@ Plugin 'https://github.com/Townk/vim-autoclose.git'
 
 " Syntax Highlight 
 Plugin 'posva/vim-vue'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'pangloss/vim-javascript'
-Plugin 'JulesWang/css.vim'
-Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'https://github.com/sheerun/vim-polyglot.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -50,7 +47,7 @@ set showmatch
 set t_Co=256
 syntax on
 set background=dark
-color jellybeans 
+color distinguished 
 
 " *************** Indentation ***************
 filetype plugin on
