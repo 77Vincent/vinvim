@@ -7,10 +7,16 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+
+" Tools 
 Plugin 'https://github.com/ervandew/supertab.git'
-Plugin 'pangloss/vim-javascript'
 Plugin 'https://github.com/Townk/vim-autoclose.git'
+
+" Syntax Highlight 
 Plugin 'posva/vim-vue'
+Plugin 'pangloss/vim-javascript'
+Plugin 'JulesWang/css.vim'
+Plugin 'cakebaker/scss-syntax.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
