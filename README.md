@@ -4,13 +4,13 @@ Personal .bash_profile and .vimrc settings on mac os x to make Bash and Vim easi
 
 ## What's included
 
-~/.bash_profile
+.bash_profile
 
-~/.vimrc
+.vimrc
 
 ## Installation
 
-    git clone 
+    git clone https://github.com/77Vincent/vinvim.git
     
     cd vinvim
 
