@@ -11,6 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Tools 
 Plugin 'https://github.com/ervandew/supertab.git'
 Plugin 'https://github.com/Townk/vim-autoclose.git'
+Plugin 'maksimr/vim-jsbeautify'
 
 " Syntax Highlight 
 Plugin 'posva/vim-vue'
@@ -64,3 +65,5 @@ set incsearch
 set cursorcolumn
 set cursorline
 
+" *************** Mapping ***************
+map <c-f> :call JsBeautify()<cr>

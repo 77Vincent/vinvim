@@ -4,9 +4,11 @@ Personal .bash_profile and .vimrc settings on mac os x to make Bash and Vim easi
 
 ## What's included
 
-.bash_profile
+    .bash_profile
 
-.vimrc
+    .vimrc
+
+    color schemes
 
 ## Installation
 
@@ -16,7 +18,13 @@ Personal .bash_profile and .vimrc settings on mac os x to make Bash and Vim easi
 
     ./install
 
-## Environment
+    :PluginInstall
 
-Mac os x
+## Features
+
+* surpertab
+* autoclose
+* jsBeautify
+* mutilple syntax highlight
+
 
