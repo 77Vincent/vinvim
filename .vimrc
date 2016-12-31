@@ -15,6 +15,7 @@ Plugin 'maksimr/vim-jsbeautify'
 
 " Syntax Highlight 
 Plugin 'posva/vim-vue'
+Plugin 'https://github.com/evidens/vim-twig.git'
 Plugin 'https://github.com/sheerun/vim-polyglot.git'
 
 " All of your Plugins must be added before the following line
