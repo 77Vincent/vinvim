@@ -48,7 +48,7 @@ set showmatch
 set t_Co=256
 syntax on
 set background=dark
-color distinguished 
+color jellybeans 
 
 " *************** Indentation ***************
 filetype plugin on
