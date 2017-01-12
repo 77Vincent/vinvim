@@ -11,12 +11,11 @@ Plugin 'VundleVim/Vundle.vim'
 " Tools 
 Plugin 'https://github.com/ervandew/supertab.git'
 Plugin 'https://github.com/Townk/vim-autoclose.git'
-Plugin 'maksimr/vim-jsbeautify'
 
 " Syntax Highlight 
-Plugin 'posva/vim-vue'
 Plugin 'https://github.com/evidens/vim-twig.git'
-Plugin 'https://github.com/sheerun/vim-polyglot.git'
+Plugin 'posva/vim-vue'
+Plugin 'https://github.com/pangloss/vim-javascript.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
