@@ -11,6 +11,10 @@ Plugin 'VundleVim/Vundle.vim'
 " Tools 
 Plugin 'https://github.com/ervandew/supertab.git'
 Plugin 'https://github.com/Townk/vim-autoclose.git'
+Plugin 'mhinz/vim-signify'
+Plugin 'https://github.com/tpope/vim-surround.git'
+Plugin 'https://github.com/terryma/vim-multiple-cursors.git'
+Plugin 'https://github.com/tpope/vim-commentary.git'
 
 " Syntax Highlight 
 Plugin 'https://github.com/evidens/vim-twig.git'
@@ -48,7 +52,7 @@ set showmatch
 set t_Co=256
 syntax on
 set background=dark
-color jellybeans 
+color distinguished 
 
 " *************** Indentation ***************
 filetype plugin on
