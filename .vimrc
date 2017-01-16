@@ -8,7 +8,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" Tools 
+" Tools
 Plugin 'https://github.com/ervandew/supertab.git'
 Plugin 'https://github.com/Townk/vim-autoclose.git'
 Plugin 'mhinz/vim-signify'
@@ -16,7 +16,7 @@ Plugin 'https://github.com/tpope/vim-surround.git'
 Plugin 'https://github.com/terryma/vim-multiple-cursors.git'
 Plugin 'https://github.com/tpope/vim-commentary.git'
 
-" Syntax Highlight 
+" Syntax Highlight
 Plugin 'https://github.com/evidens/vim-twig.git'
 Plugin 'posva/vim-vue'
 Plugin 'https://github.com/pangloss/vim-javascript.git'
@@ -52,11 +52,11 @@ set showmatch
 set t_Co=256
 syntax on
 set background=dark
-color distinguished 
+color distinguished
 
 " *************** Indentation ***************
 filetype plugin on
-set tabstop=4 
+set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set autoindent
@@ -69,9 +69,8 @@ set incsearch
 set cursorcolumn
 set cursorline
 
+highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t\+\|\t\+\zs \+/
+
 " *************** Mapping ***************
-autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
-autocmd FileType json noremap <buffer> <c-f> :call JsonBeautify()<cr>
-autocmd FileType jsx noremap <buffer> <c-f> :call JsxBeautify()<cr>
-autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
-autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+command Clean %s/\s\+$//g
