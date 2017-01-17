@@ -27,7 +27,6 @@ call vundle#end()            " required
 
 " *************** Basic ***************
 set history=1000
-set laststatus=2
 set number
 set scrolloff=12
 set ruler
@@ -42,6 +41,11 @@ set path+=**
 
 " Display all matching files when we tab complete
 set wildmenu
+
+" *************** Statusline ***************
+set laststatus=2
+set statusline+=%f%y "Show file path and type
+set statusline+=%=%l/%L "Show current line and total lines
 
 " *************** Automate ***************
 set autowrite
@@ -83,6 +87,7 @@ set pastetoggle=<leader>z
 
 nmap <S-l> gt
 nmap <S-h> gT
+nnoremap <leader>o :tabnew<cr>
 nnoremap <leader>w :w<cr>
 nnoremap <leader>x :x<cr>
 nnoremap <leader>q :q<cr>
