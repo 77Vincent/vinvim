@@ -42,10 +42,11 @@ set path+=**
 " Display all matching files when we tab complete
 set wildmenu
 
-" *************** Statusline ***************
+" *************** Statusline & tab***************
 set laststatus=2
 set statusline+=%f%y "Show file path and type
 set statusline+=%=%l/%L "Show current line and total lines
+set guitablabel=%t
 
 " *************** Automate ***************
 set autowrite
