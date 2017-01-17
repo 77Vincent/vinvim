@@ -69,8 +69,18 @@ set incsearch
 set cursorcolumn
 set cursorline
 
-highlight ExtraWhitespace ctermbg=red guibg=red
+highlight ExtraWhitespace ctermbg=52 guibg=#5f0000
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t\+\|\t\+\zs \+/
 
 " *************** Mapping ***************
+let mapleader = "\<Space>"
+
 command Clean %s/\s\+$//g
+
+set pastetoggle=<leader>z
+
+nmap <S-l> gt
+nmap <S-h> gT
+nnoremap <leader>w :w<cr>
+nnoremap <leader>x :x<cr>
+nnoremap <leader>q :q<cr>
