@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 cp .vimrc ~/
-cp ./colors/* ~/.vim/colors
 cp .bash_profile ~/
 
 # Reload .bash_profile

@@ -8,12 +8,10 @@ Personal .bash_profile and .vimrc settings on mac os x to make Bash and Vim easi
 
 * .vimrc
 
-* color schemes
-
 ## Installation
 
     git clone https://github.com/77Vincent/vinvim.git
-    
+
     cd vinvim
 
     ./install
@@ -24,7 +22,6 @@ Personal .bash_profile and .vimrc settings on mac os x to make Bash and Vim easi
 
 * surpertab
 * autoclose
-* jsBeautify
 * mutilple syntax highlight
 
 

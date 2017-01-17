@@ -17,6 +17,7 @@ Plugin 'https://github.com/terryma/vim-multiple-cursors.git'
 Plugin 'https://github.com/tpope/vim-commentary.git'
 
 " Syntax Highlight
+Plugin 'https://github.com/nanotech/jellybeans.vim.git'
 Plugin 'https://github.com/evidens/vim-twig.git'
 Plugin 'posva/vim-vue'
 Plugin 'https://github.com/pangloss/vim-javascript.git'
@@ -26,6 +27,7 @@ call vundle#end()            " required
 
 " *************** Basic ***************
 set history=1000
+set laststatus=2
 set number
 set scrolloff=12
 set ruler
@@ -52,7 +54,7 @@ set showmatch
 set t_Co=256
 syntax on
 set background=dark
-color distinguished
+colorscheme jellybeans
 
 " *************** Indentation ***************
 filetype plugin on
