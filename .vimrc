@@ -79,10 +79,18 @@ set cursorline
 highlight ExtraWhitespace ctermbg=52 guibg=#5f0000
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t\+\|\t\+\zs \+/
 
+" Formatting the file when writing a buffer
+function Formatting()
+" Remove all taling white space
+silent! %s/\s\+$//g
+" Remove repeated and endding empty line
+silent! g/^\n$/d
+endfunction
+
+autocmd BufWritePre * call Formatting()
+
 " *************** Mapping ***************
 let mapleader = "\<Space>"
-
-command Clean %s/\s\+$//g
 
 set pastetoggle=<leader>z
 
