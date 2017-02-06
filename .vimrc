@@ -95,7 +95,7 @@ endfunction
 
 autocmd BufEnter * call Indentation()
 autocmd BufWritePre * call Formatting()
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t\+\|\t\+\zs \+/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$\|\s\+\ze\t\+\|\t\+\zs\s\+/
 
 " *************** Mapping ***************
 let mapleader = "\<Space>"
