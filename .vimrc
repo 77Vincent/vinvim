@@ -89,7 +89,6 @@ endfunction
 
 " Convert all tab to space
 function Indentation()
-set expandtab
 retab
 echo 'Has converted all tab to space'
 endfunction
