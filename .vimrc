@@ -75,9 +75,9 @@ set hlsearch
 set incsearch
 set cursorcolumn
 set cursorline
-
 highlight ExtraWhitespace ctermbg=52 guibg=#5f0000
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t\+\|\t\+\zs \+/
+
+" *************** Autocmd ***************
 
 " Formatting the file when writing a buffer
 function Formatting()
@@ -87,7 +87,16 @@ silent! %s/\s\+$//g
 silent! g/^\n$/d
 endfunction
 
+" Convert all tab to space
+function Indentation()
+set expandtab
+retab
+echo 'Has converted all tab to space'
+endfunction
+
+autocmd BufEnter * call Indentation()
 autocmd BufWritePre * call Formatting()
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t\+\|\t\+\zs \+/
 
 " *************** Mapping ***************
 let mapleader = "\<Space>"
