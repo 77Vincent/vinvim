@@ -87,13 +87,6 @@ silent! %s/\s\+$//g
 silent! g/^\n$/d
 endfunction
 
-" Convert all tab to space
-function Indentation()
-retab
-echo 'Has converted all tab to space'
-endfunction
-
-autocmd BufEnter * call Indentation()
 autocmd BufWritePre * call Formatting()
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$\|\s\+\ze\t\+\|\t\+\zs\s\+/
 
