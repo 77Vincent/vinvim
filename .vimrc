@@ -12,9 +12,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'https://github.com/ervandew/supertab.git'
 Plugin 'https://github.com/Townk/vim-autoclose.git'
 Plugin 'mhinz/vim-signify'
-Plugin 'https://github.com/tpope/vim-surround.git'
-Plugin 'https://github.com/terryma/vim-multiple-cursors.git'
 Plugin 'https://github.com/tpope/vim-commentary.git'
+Plugin 'editorconfig/editorconfig-vim'
 
 " Syntax Highlight
 Plugin 'https://github.com/Lokaltog/vim-distinguished.git'
