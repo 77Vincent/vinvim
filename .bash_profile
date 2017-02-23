@@ -2,7 +2,7 @@
 alias ll="ls -lA"
 alias ~~="cd ~/"
 alias ..="cd ../; ll"
-alias grep="grep --color=always"
+alias grep="grep -rn --color=always"
 alias vi="vim"
 
 # Git

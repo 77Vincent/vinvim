@@ -3,4 +3,4 @@ cp .vimrc ~/
 cp .bash_profile ~/
 
 # Reload .bash_profile
-source ~/.bash_profile
+source .bash_profile
