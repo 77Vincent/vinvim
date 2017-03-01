@@ -99,8 +99,8 @@ function Reindent(cur, value)
 endfunction
 
 command -nargs=* Reindent call Reindent(<f-args>)
+command Format call Format()
 
-autocmd BufWritePre * call Format()
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$\|\s\+\ze\t\+\|\t\+\zs\s\+/
 
 " *************** Mapping ***************
