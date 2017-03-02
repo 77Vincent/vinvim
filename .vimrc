@@ -101,7 +101,7 @@ endfunction
 command -nargs=* Reindent call Reindent(<f-args>)
 command Format call Format()
 
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$\|\s\+\ze\t\+\|\t\+\zs\s\+/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$\|\s\+\ze\t\+\|\t\+\zs\s\+\|^\n$/
 
 " *************** Mapping ***************
 let mapleader = "\<Space>"
