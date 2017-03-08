@@ -1,3 +1,9 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Title: Vinvim
+" Author: Vincent Wen
+" License: MIT
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 set nocompatible  " be iMproved, required
 filetype off  " required
 
@@ -78,7 +84,7 @@ highlight ExtraWhitespace ctermbg=52 guibg=#5f0000
 
 " *************** Autocmd ***************
 " Formatting the file when writing a buffer
-function Format()
+function Clean()
   " Remove all taling white space
   silent! %s/\s\+$//g
   " Remove repeated and endding empty line
@@ -99,7 +105,7 @@ function Reindent(cur, value)
 endfunction
 
 command -nargs=* Reindent call Reindent(<f-args>)
-command Format call Format()
+command Clean call Clean()
 
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$\|\s\+\ze\t\+\|\t\+\zs\s\+\|^\n$/
 
