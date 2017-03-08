@@ -1,6 +1,4 @@
-# Bash and Vim Personal settings
-
-Personal .bash_profile and .vimrc settings on mac os x to make Bash and Vim easier to use
+# Custom Vim and Bash configurations
 
 ## What's included
 
@@ -23,5 +21,8 @@ Personal .bash_profile and .vimrc settings on mac os x to make Bash and Vim easi
 * surpertab
 * autoclose
 * mutilple syntax highlight
+* quickly comment
+* quickly reindent file with different tab with
+* quickly formatting
 
 
