@@ -25,6 +25,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'https://github.com/Lokaltog/vim-distinguished.git'
 Plugin 'https://github.com/evidens/vim-twig.git'
 Plugin 'posva/vim-vue'
+Plugin 'https://github.com/mxw/vim-jsx.git'
 Plugin 'https://github.com/pangloss/vim-javascript.git'
 
 " All of your Plugins must be added before the following line
